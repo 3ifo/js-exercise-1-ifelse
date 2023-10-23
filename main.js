@@ -42,13 +42,9 @@ alert(alessio); */
 let eta = prompt("Quanti anni hai?");
 if (eta < 13) {
   alert("Puoi vedere solo film con classificazione PG");
-}
-if (13 <= eta < 17);
-{
-  alert("Puoi vedere solo film con classificazione PG PG 13");
-}
-if (eta > 17);
-{
+} else if (eta >= 13 && eta <= 17) {
+  alert("Puoi vedere film con classificazione PG e PG-13");
+} else {
   alert("Puoi vedere tutti i film");
 } */
 
@@ -81,3 +77,31 @@ if (bmi < 18.5) {
 {
   alert("vai a correre");
 } */
+
+/* Verificatore di anno bisestile 
+
+let anno = prompt("dimmi un anno");
+let annoNumero = parseInt(anno);
+
+if (annoNumero % 4 === 0 && annoNumero % 100 !== 0) {
+  alert("Anno bisestile");
+} else if (annoNumero % 400 === 0) {
+  alert("Anno bisestile");
+} else {
+  alert("Non bisestile");
+} */
+
+/* L'assegnatore di voti */
+
+let punteggioTest = prompt("il tuo punteggio?");
+if (punteggioTest >= 90) {
+  alert("A");
+} else if (punteggioTest >= 80 && punteggioTest < 90) {
+  alert("B");
+} else if (punteggioTest >= 70 && punteggioTest < 80) {
+  alert("C");
+} else if (punteggioTest >= 60 && punteggioTest < 70) {
+  alert("D");
+} else {
+  alert("F");
+}
